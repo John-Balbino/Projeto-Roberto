@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export function MobileFooterMenu() {
   return (
-    <nav className="sticky bottom-0 w-full  bg-white shadow-md border-t border-gray-200 md:hidden">
+    <nav className="sticky bottom-0 w-full  bg-black shadow-md border-t border-gray-200 md:hidden">
       <ul className="flex justify-around items-center py-2 text-amber-600">
         <li>
           <Link to="/" className="flex flex-col items-center text-sm">
