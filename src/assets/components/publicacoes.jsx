@@ -57,6 +57,7 @@ export function Publicacoes() {
           className="w-full h-80 object-cover rounded-xl"
         />
       </main>
+      
     </section>
   );
 }

@@ -89,6 +89,11 @@ export function Contato() {
           ></iframe>
         </div>
       </div>
+      {/*footer mobile*/}
+       <div className=" w-full bg-black text-white p-4 md:hidden flex gap-5 justify-between">
+        <p className="text-center text-sm">© 2026 - Direitos Reservados.</p>
+        <p className="text-center text-sm">Site Desenvolvido por <a href="https://john-balbino.github.io/Portif-lio-3.0-react/" target="_blank" className="font-bold">John Balbino</a></p>
+      </div>
     </section>
   );
 }
