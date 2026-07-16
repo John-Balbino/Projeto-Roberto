@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Home() {
   return (
     <section className="flex flex-col p-2 md:p-0 gap-5 justify-between">
@@ -94,8 +96,8 @@ export function Home() {
           </p>
           <button
             className="button"
-          >
-            Contato
+          ><Link to="/contato">Contato</Link>
+            
           </button>
         </div>
       </article>

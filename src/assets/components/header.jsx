@@ -1,9 +1,9 @@
 import logoimg from "../img/logo-site.jpg";
-import { useState } from "react";
+{/*import { useState } from "react";*/}
 import { Link } from "react-router-dom";
 
 export function Navbar() {
-  const [open, setOpen] = useState(false);
+  {/*const [open, setOpen] = useState(false);*/}
 
   return (
     <header>
@@ -15,7 +15,7 @@ export function Navbar() {
           </a>
           <span className="hidden md:flex md:text-[16px] ">+55 (11) 96132-4380</span>
         </div>
-        <span className="text-[12px] md:text-[18px]">Av.Ipanema, 382, sala 1-São Paulo, SP</span>
+        <span className="text-[12px] md:text-[18px]">Av. Ipanema, 382 -SL01 - São Paulo, SP</span>
         <div className="flex gap-0.5 p-1">
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-facebook  text-[18px] md:text-[24px]"></i>
@@ -50,8 +50,8 @@ export function Navbar() {
             <Link className="list" to="/contato">Contato</Link>
           </ul>
             
-
-          {/* Botão hamburguer */}
+          {/*
+          {/* Botão hamburguer *
           <button
             className="text-amber-600 text-3xl cursor-pointer md:hidden"
             onClick={() => setOpen(!open)}
@@ -59,7 +59,7 @@ export function Navbar() {
             {open ? "✖" : "☰"}
           </button>
 
-          {/* Menu mobile com transição */}
+          {/* Menu mobile com transição *
           <div
             className={`md:hidden transition-all duration-500 ease-in-out overflow-hidden 
               ${open ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4"}
@@ -72,7 +72,7 @@ export function Navbar() {
               <Link className=" list-mobile" to="/publicacoes">Publicações</Link>
               <Link className=" list-mobile" to="/contato">Contato</Link>
             </ul>
-          </div>
+          </div>*/}
         </nav>
       </div>
     </header>

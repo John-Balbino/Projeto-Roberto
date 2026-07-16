@@ -1,110 +1,62 @@
+import { useState } from "react";
 import imgNoticia from "../../assets/img/foto-noticia.jpg";
 
+const noticias = [
+  { id: 1, titulo: "Notícia 1", conteudo: "Em breve", imagem: imgNoticia },
+  { id: 2, titulo: "Notícia 2", conteudo: "Em breve", imagem: imgNoticia },
+  { id: 3, titulo: "Notícia 3", conteudo: "Em breve", imagem: imgNoticia },
+];
+
 export function Publicacoes() {
+  const [selecionada, setSelecionada] = useState(noticias[0]);
+  const [menuAberto, setMenuAberto] = useState(false);
+
   return (
-    <section className="flex flex-col gap-4 justify-between min-h-screen">
-      <h2 className="p-2 w-95 md:w-125 bg-linear-to-r from-amber-500 via-amber-700 to-amber-800 bg-clip-text text-transparent font-bold text-[20px] md:text-[25px]">
-        Publicações
-      </h2>
+    <section className="flex min-h-screen relative">
+      {/* Botão para abrir/fechar menu no mobile */}
+      <button
+        className="absolute top-0 right-0 md:hidden bg-amber-500 text-white px-3 py-2 rounded"
+        onClick={() => setMenuAberto(!menuAberto)}
+      >
+        {menuAberto ? "Fechar" : "Menu"}
+      </button>
 
-      <div className="flex flex-col md:grid md:grid-cols-2 gap-4 p-4">
-        <div className="flex border border-black rounded-2xl md:w-full md:h-100 overflow-hidden">
-          {/* Conteúdo ocupa metade */}
-          <div className="flex flex-col gap-4 p-4 flex-1">
-            <h3 className="uppercase font-bold">Noticia</h3>
-            <p className="flex-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              autem ullam labore modi perferendis, ex ut voluptate et
-              reprehenderit ipsum, cumque iste magni. Officiis exercitationem eos
-              incidunt eaque quia minima.
-            </p>
-            <a href="">
-              <button className="button">Saiba mais</button>
-            </a>
-          </div>
+      {/* Menu lateral */}
+      <aside
+        className={`fixed md:static top-0 left-0 h-full md:h-auto w-2/3 md:w-35 bg-white border-r border-gray-300 p-4 transform transition-transform duration-300 ease-in-out
+        ${menuAberto ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
+      >
+        <h2 className="font-bold text-[18px] md:text-lg mb-4">Publicações</h2>
+        <ul className="flex flex-col gap-2">
+          {noticias.map((noticia) => (
+            <li
+              key={noticia.id}
+              className={`cursor-pointer p-2 rounded uppercase border-b border-gray-300 ${
+                selecionada.id === noticia.id
+                  ? "bg-amber-500 font-bold"
+                  : "hover:bg-gray-100"
+              }`}
+              onClick={() => {
+                setSelecionada(noticia);
+                setMenuAberto(false); // fecha menu ao clicar
+              }}
+            >
+              {noticia.titulo}
+            </li>
+          ))}
+        </ul>
+      </aside>
 
-          {/* Imagem ocupa metade */}
-          <div className="flex-1">
-            <img
-              src={imgNoticia}
-              alt="imagem da noticia"
-              className="w-full h-full object-cover rounded-2xl shape"
-            />
-          </div>
-        </div>
-        <div className="flex border border-black rounded-2xl md:w-full md:h-100 overflow-hidden">
-          {/* Conteúdo ocupa metade */}
-          <div className="flex flex-col gap-4 p-4 flex-1">
-            <h3 className="uppercase font-bold">Noticia</h3>
-            <p className="flex-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              autem ullam labore modi perferendis, ex ut voluptate et
-              reprehenderit ipsum, cumque iste magni. Officiis exercitationem eos
-              incidunt eaque quia minima.
-            </p>
-            <a href="">
-              <button className="button">Saiba mais</button>
-            </a>
-          </div>
-
-          {/* Imagem ocupa metade */}
-          <div className="flex-1">
-            <img
-              src={imgNoticia}
-              alt="imagem da noticia"
-              className="w-full h-full object-cover rounded-2xl shape"
-            />
-          </div>
-        </div>
-        <div className="flex border border-black rounded-2xl md:w-full md:h-100 overflow-hidden">
-          {/* Conteúdo ocupa metade */}
-          <div className="flex flex-col gap-4 p-4 flex-1">
-            <h3 className="uppercase font-bold">Noticia</h3>
-            <p className="flex-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              autem ullam labore modi perferendis, ex ut voluptate et
-              reprehenderit ipsum, cumque iste magni. Officiis exercitationem eos
-              incidunt eaque quia minima.
-            </p>
-            <a href="">
-              <button className="button">Saiba mais</button>
-            </a>
-          </div>
-
-          {/* Imagem ocupa metade */}
-          <div className="flex-1">
-            <img
-              src={imgNoticia}
-              alt="imagem da noticia"
-              className="w-full h-full object-cover rounded-2xl shape"
-            />
-          </div>
-        </div>
-        <div className="flex border border-black rounded-2xl md:w-full md:h-100 overflow-hidden">
-          {/* Conteúdo ocupa metade */}
-          <div className="flex flex-col gap-4 p-4 flex-1">
-            <h3 className="uppercase font-bold">Noticia</h3>
-            <p className="flex-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              autem ullam labore modi perferendis, ex ut voluptate et
-              reprehenderit ipsum, cumque iste magni. Officiis exercitationem eos
-              incidunt eaque quia minima.
-            </p>
-            <a href="">
-              <button className="button">Saiba mais</button>
-            </a>
-          </div>
-
-          {/* Imagem ocupa metade */}
-          <div className="flex-1">
-            <img
-              src={imgNoticia}
-              alt="imagem da noticia"
-              className="w-full h-full object-cover rounded-2xl shape"
-            />
-          </div>
-        </div>
-      </div>
+      {/* Conteúdo da notícia selecionada */}
+      <main className="flex-1 p-6 md:ml-0 ml-0">
+        <h3 className="uppercase font-bold mb-4">{selecionada.titulo}</h3>
+        <p className="mb-4">{selecionada.conteudo}</p>
+        <img
+          src={selecionada.imagem}
+          alt={`Imagem de ${selecionada.titulo}`}
+          className="w-full h-80 object-cover rounded-xl"
+        />
+      </main>
     </section>
   );
 }

@@ -18,10 +18,9 @@ export function Area() {
 
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-              accusantium.
+              Soluções em contratos, responsabilidade civil, indenizações e questões patrimoniais.
             </p>
-            <button className="button">saiba mais</button>
+            
           </div>
         </div>
 
@@ -35,10 +34,9 @@ export function Area() {
 
           <div class>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-              accusantium.
+              Defesa de profissionais e pacientes em casos de erro médico, responsabilidade hospitalar e ética profissional.
             </p>
-            <button className="button">saiba mais</button>
+            
           </div>
         </div>
 
@@ -52,10 +50,9 @@ export function Area() {
 
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-              accusantium.
+              Representação em ações de empregados e empregadores, envolvendo direitos, deveres e relações de trabalho.
             </p>
-            <button className="button">saiba mais</button>
+            
           </div>
         </div>
 
@@ -69,10 +66,9 @@ export function Area() {
 
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-              accusantium.
+              Acompanhamento de benefícios, aposentadorias, revisões e demandas junto ao INSS.
             </p>
-            <button className="button">saiba mais</button>
+            
           </div>
         </div>
       </div>

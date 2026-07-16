@@ -1,4 +1,17 @@
 export function Contato() {
+  const enviarWhatsApp = (e) => {
+    e.preventDefault();
+    const nome = e.target.nome.value;
+    const email = e.target.email.value;
+    const telefone = e.target.telefone.value;
+    const mensagem = e.target.mensagem.value;
+
+    const texto = `Nome: ${nome}%0AEmail: ${email}%0ATelefone: ${telefone}%0AMensagem: ${mensagem}`;
+    const url = `https://wa.me/5511961324380?text=${texto}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="flex flex-col min-h-screen ">
       {/* Formulário de contato */}
@@ -23,43 +36,37 @@ export function Contato() {
         </div>
 
         <form
-          onSubmit={(e) => e.preventDefault()}
-          className="flex flex-col p-5 
-        gap-4 border border-gray-500/50 "
+          onSubmit={enviarWhatsApp}
+          className="flex flex-col gap-4 border border-amber-600 p-4"
         >
           <input
-            className="bg-gray-300 p-2 rounded-2xl"
+            className="bg-gray-300 p-2 rounded-xl hover:pointer"
             type="text"
             name="nome"
             placeholder="Nome"
             required
           />
-
           <input
-            className="bg-gray-300 p-2 rounded-2xl"
+            className="bg-gray-300 p-2 rounded-xl hover:pointer"
             type="email"
             name="email"
             placeholder="E-mail"
             required
           />
-
           <input
-            className="bg-gray-300 p-2 rounded-2xl"
+            className="bg-gray-300 p-2 rounded-xl hover:pointer"
             type="tel"
             name="telefone"
             placeholder="Telefone"
           />
-
           <textarea
+            className="bg-gray-300 p-2 rounded-xl hover:pointer"
             name="mensagem"
             placeholder="Mensagem"
-            rows="5"
             required
-            className="bg-gray-300 p-2 rounded-2xl"
           ></textarea>
-
-          <button className="button self-end " type="submit">
-            Enviar
+          <button type="submit" className="button">
+            Enviar via WhatsApp
           </button>
         </form>
       </div>
@@ -69,15 +76,15 @@ export function Contato() {
           Endereço
         </h2>
         <div className="flex flex-col items-center gap-3">
-          <p>Av. Ipanema, 382, sala 1 - São Paulo, SP</p>
+          <p>Av. Ipanema, 382 - Sl 01 - Veleiros, São Paulo - SP</p>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.8196512365816!2d-46.7089068!3d-23.682406699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce502cca066dc1%3A0xfb62d1d568a122bd!2sAv.%20Ipanema%2C%20382%20-%20Veleiros%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004773-010!5e0!3m2!1spt-BR!2sbr!4v1783804052731!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.816933699101!2d-46.70879187177243!3d-23.68250385798539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51949f7c9deb%3A0x913932600dcfd9e!2sEscritorio%20de%20advocacia%20ROBERTO%20ARA%C3%9AJO%20ALVES%20DA%20SILVA%20%26%20OSNI%20NASCIMENTO%20DA%20SILVA%20SOCIEDADE%20DE%20ADVOGADOS.!5e0!3m2!1spt-BR!2sbr!4v1784213621533!5m2!1spt-BR!2sbr"
             width="600"
             height="450"
-            allowFullScreen=""
             
+            allowfullscreen=""
             loading="lazy"
-            referrerPolicy="strict-origin-when-cross-origin"
+            referrerpolicy="strict-origin-when-cross-origin"
             className="rounded-2xl pointer w-full h-full md:w-100 md:h-100"
           ></iframe>
         </div>
