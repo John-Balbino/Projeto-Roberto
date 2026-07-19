@@ -3,10 +3,10 @@ export function Institucional() {
     <section className="flex flex-col gap-8 ">
       <div>
         <div className="flex flex-col gap-2 inst-intro ">
-          <h2 className=" p-4 w-95 md:w-125 bg-linear-to-r from-amber-500 via-amber-700 to-amber-800  bg-clip-text text-transparent font-bold text-[20px] md:text-[25px]">
+          <h2 className=" p-4 w-full md:w-125 bg-linear-to-r from-amber-500 via-amber-700 to-amber-800  bg-clip-text text-transparent font-bold text-[20px] md:text-[25px]">
             Nossa História: O Encontro entre a Vocação e a Experiência
           </h2>
-          <p className="text-[16px] md:text-[20px] w-100  md:w-145 p-4 ">
+          <p className="text-[16px] md:text-[20px] w-full  md:w-145 p-4 ">
             <b>A Silva RAAS & ONS Sociedade de Advogados</b> é o resultado de
             uma parceria sólida, iniciada ainda na infância. Roberto e Osni
             compartilhavam, desde os primeiros anos escolares, o propósito comum

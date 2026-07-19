@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export function Home() {
   return (
-    <section className="flex flex-col p-2 md:p-0 gap-5 justify-between">
+    <section className="flex flex-col p-2 md:p-0 gap-5 justify-between w-full">
       <div className="flex flex-col gap-2 relative home-intro ">
-        <h2 className="p-4 w-95 bg-linear-to-r from-amber-500 via-amber-700 to-amber-800  bg-clip-text text-transparent font-bold text-[20px]">
+        <h2 className="p-4 w-full md:w-125 bg-linear-to-r from-amber-500 via-amber-700 to-amber-800  bg-clip-text text-transparent font-bold text-[20px]">
           Manifesto Silva, Raas & Ons: Onde o Direito Encontra o Humano
         </h2>
         <p className="text-[16px] w-full md:w-100 p-4 ">

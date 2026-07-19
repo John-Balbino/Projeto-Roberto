@@ -54,7 +54,7 @@ export function Publicacoes() {
         <img
           src={selecionada.imagem}
           alt={`Imagem de ${selecionada.titulo}`}
-          className="w-full h-80 object-cover rounded-xl"
+          className="w-80 h-80 object-center rounded-xl"
         />
       </main>
       

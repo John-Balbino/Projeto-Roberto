@@ -2,7 +2,7 @@ export function Area() {
   return (
     <section className="flex flex-col p-4 min-h-screen  gap-10  ">
       <div>
-        <h2 className="p-2 w-95 md:w-125 bg-linear-to-r from-amber-500 via-amber-700 to-amber-800  bg-clip-text text-transparent font-bold text-[20px] md:text-[25px]">
+        <h2 className="p-2 w-full md:w-125 bg-linear-to-r from-amber-500 via-amber-700 to-amber-800  bg-clip-text text-transparent font-bold text-[20px] md:text-[25px]">
           Área de atuação
         </h2>
       </div>

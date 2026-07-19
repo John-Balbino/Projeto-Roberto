@@ -30,7 +30,7 @@ export function Contato() {
             </div>
             <div className="flex gap-4 items-center">
               <i className="fa-solid fa-envelope  text-amber-500 p-2 text-[30px] pointer hover:scale-110 hover:text-red-800 transition-all durantion-1000 "></i>
-              <p>5cF4o@example.com</p>
+              <p>silvaraasons.adv@gmail.com</p>
             </div>
           </div>
         </div>
@@ -90,9 +90,9 @@ export function Contato() {
         </div>
       </div>
       {/*footer mobile*/}
-       <div className=" w-full bg-black text-white p-4 md:hidden flex gap-5 justify-between">
-        <p className="text-center text-sm">© 2026 - Direitos Reservados.</p>
-        <p className="text-center text-sm">Site Desenvolvido por <a href="https://john-balbino.github.io/Portif-lio-3.0-react/" target="_blank" className="font-bold">John Balbino</a></p>
+       <div className="flex-col gap-2 text-[12px] items-start w-full bg-black text-white/70  p-4 md:hidden flex">
+        <p className=""> © 2026 SILVA RAAS & ONS – Todos os direitos reservados.</p>
+        <p className="">Site Desenvolvido por <a href="https://john-balbino.github.io/Portif-lio-3.0-react/" target="_blank" className="font-bold">John Balbino</a></p>
       </div>
     </section>
   );
