@@ -17,7 +17,7 @@ export function Navbar() {
   return (
     <header className="w-full sticky top-0 z-50 shadow-2xl">
       {/* Topbar Informativa em Tom Âmbar */}
-      <div className="bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 text-black px-4 sm:px-8 py-1.5 flex justify-between items-center text-xs font-semibold">
+      <div className="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-black px-4 sm:px-8 py-1.5 flex justify-between items-center text-xs font-semibold">
         <div className="flex items-center gap-6">
           <a
             href="https://wa.me/5511961324380"
@@ -51,22 +51,22 @@ export function Navbar() {
       </div>
 
       {/* Main Header / Branding e Menu */}
-      <div className="bg-black/95 backdrop-blur-md border-b border-amber-500/30 px-4 sm:px-8 py-3 flex items-center justify-between">
+      <div className="bg-black/95 backdrop-blur-md border-b border-amber-400/30 px-4 sm:px-8 py-3 flex items-center justify-between">
         {/* Branding / Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <img
             src={logoimg}
             alt="Silva Raas & Ons Logo"
-            className="h-11 sm:h-14 w-auto object-contain rounded-lg border border-amber-500/30 group-hover:border-amber-400 transition-colors"
+            className="h-11 sm:h-14 w-auto object-contain rounded-lg border border-amber-400/30 group-hover:border-amber-400 transition-colors"
           />
           <div className="flex flex-col">
-            <h1 className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent font-bold text-base sm:text-lg md:text-xl tracking-wide leading-tight">
+            <h1 className="bg-gradient-to-r from-amber-400 via-amber-400 to-amber-400 bg-clip-text text-transparent font-bold text-base sm:text-lg md:text-xl tracking-wide leading-tight">
               SILVA RAAS & ONS
             </h1>
             <span className="text-gray-300 font-light text-[11px] sm:text-xs tracking-wider">
               Advogados Associados
             </span>
-            <span className="text-amber-500/90 font-medium text-[9px] sm:text-[10px] tracking-widest uppercase">
+            <span className="text-amber-400/90 font-medium text-[9px] sm:text-[10px] tracking-widest uppercase">
               OAB/SP 67.322
             </span>
           </div>
@@ -96,7 +96,7 @@ export function Navbar() {
         <button
           onClick={() => setOpen(!open)}
           aria-label="Toggle Menu"
-          className="md:hidden w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 hover:bg-amber-500 hover:text-black transition-all cursor-pointer touch-manipulation"
+          className="md:hidden w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400 hover:bg-amber-400 hover:text-black transition-all cursor-pointer touch-manipulation"
         >
           <i className={`fa-solid ${open ? "fa-xmark text-lg" : "fa-bars text-base"}`}></i>
         </button>
@@ -104,7 +104,7 @@ export function Navbar() {
 
       {/* Menu Mobile Expansível */}
       <div
-        className={`md:hidden bg-black/95 backdrop-blur-xl border-b border-amber-500/30 transition-all duration-300 overflow-hidden ${
+        className={`md:hidden bg-black/95 backdrop-blur-xl border-b border-amber-400/30 transition-all duration-300 overflow-hidden ${
           open ? "max-h-80 opacity-100 py-4" : "max-h-0 opacity-0 py-0"
         }`}
       >
@@ -118,8 +118,8 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
                 className={`p-3 rounded-xl border text-xs sm:text-sm uppercase tracking-wider font-semibold transition-all ${
                   isActive
-                    ? "bg-amber-500 text-black border-amber-500 shadow-md shadow-amber-500/20"
-                    : "text-gray-200 border-amber-500/20 hover:border-amber-500/60 hover:bg-amber-500/10"
+                    ? "bg-amber-400 text-black border-amber-400 shadow-md shadow-amber-400/20"
+                    : "text-gray-200 border-amber-400/20 hover:border-amber-400/60 hover:bg-amber-400/10"
                 }`}
               >
                 {link.label}
