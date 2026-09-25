@@ -146,7 +146,7 @@ export function Institucional() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card Trajetórias */}
             <article className="text-center p-6 rounded-2xl bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-colors flex flex-col gap-3 shadow-lg">
-              <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
+              <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400 border-b border-amber-700/30 pb-2">
                 Trajetórias que somam
               </h4>
               <p className="text-stone-900 text-xs sm:text-sm md:text-base leading-relaxed font-normal">
@@ -156,7 +156,7 @@ export function Institucional() {
 
             {/* Card Prática Jurídica */}
             <article className="text-center p-6 rounded-2xl bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-colors flex flex-col gap-3 shadow-lg">
-              <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
+              <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400 border-b border-amber-700/30 pb-2">
                 A Consolidação da Prática Jurídica
               </h4>
               <p className="text-stone-900 text-xs sm:text-sm md:text-base leading-relaxed font-normal">
@@ -166,7 +166,7 @@ export function Institucional() {
 
             {/* Card Filosofia */}
             <article className="text-center md:col-span-2 p-6 sm:p-8 rounded-2xl bg-stone-50 border-2 border-amber-500/60 flex flex-col gap-3 shadow-xl">
-              <h4 className="text-base sm:text-lg md:text-xl font-bold uppercase text-amber-700">
+              <h4 className="text-base sm:text-lg md:text-xl font-bold uppercase text-amber-400 border-b border-amber-700/30 pb-2">
                 Nossa Filosofia de Trabalho
               </h4>
               <p className="text-stone-900 text-xs sm:text-sm md:text-base leading-relaxed font-normal">

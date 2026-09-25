@@ -22,7 +22,7 @@ export function Home() {
               Silva, Raas & Ons • Sociedade de Advogados
             </span>
 
-            <h2 className="bg-gradient-to-r from-amber-400 via-amber-400 to-amber-400 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
+            <h2 className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
               Manifesto Silva, Raas & Ons: Onde o Direito Encontra o Humano
             </h2>
 
@@ -52,7 +52,7 @@ export function Home() {
             {/* 1. Filosofia */}
             <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400 border-b border-amber-700/30 pb-2">
                   Filosofia
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -64,7 +64,7 @@ export function Home() {
             {/* 2. Dignidade da Pessoa Humana */}
             <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400 border-b border-amber-700/30 pb-2">
                   Dignidade da Pessoa Humana
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -76,7 +76,7 @@ export function Home() {
             {/* 3. Isonomia e Ética */}
             <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400 border-b border-amber-700/30 pb-2">
                   Isonomia e Ética
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -88,7 +88,7 @@ export function Home() {
             {/* 4. Responsabilidade e Confiança */}
             <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400 border-b border-amber-700/30 pb-2">
                   Responsabilidade e Confiança
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -100,7 +100,7 @@ export function Home() {
             {/* 5. Amor pela Justiça */}
             <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400 border-b border-amber-700/30 pb-2">
                   Amor pela Justiça
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
