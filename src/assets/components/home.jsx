@@ -6,7 +6,7 @@ export function Home() {
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-10 md:gap-14">
         
         {/* Banner Hero de Alto Impacto com Foto de Fundo */}
-        <div className="relative rounded-br-lg overflow-hidden border-2 border-amber-500/50 shadow-2xl min-h-[480px] sm:min-h-[520px] flex items-center p-6 sm:p-10 md:p-14 group">
+        <div className="relative rounded-br-lg overflow-hidden border-2 border-amber-400/50 shadow-2xl min-h-[480px] sm:min-h-[520px] flex items-center p-6 sm:p-10 md:p-14 group">
           
           {/* Foto de Fundo do Banner */}
           <div className="box-img absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -18,15 +18,15 @@ export function Home() {
           {/* Conteúdo do Manifesto sobre a Imagem */}
           <div className="relative z-10 max-w-2xl flex flex-col gap-5 text-left">
             <span className="text-amber-400 font-bold uppercase tracking-widest text-xs sm:text-sm flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-br-lg  bg-amber-500 animate-pulse"></span>
+              <span className="w-2.5 h-2.5 rounded-br-lg  bg-amber-400 animate-pulse"></span>
               Silva, Raas & Ons • Sociedade de Advogados
             </span>
 
-            <h2 className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
+            <h2 className="bg-gradient-to-r from-amber-400 via-amber-400 to-amber-400 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
               Manifesto Silva, Raas & Ons: Onde o Direito Encontra o Humano
             </h2>
 
-            <p className="text-gray-100 text-sm sm:text-base md:text-lg leading-relaxed font-normal bg-black/40 backdrop-blur-xs p-4 sm:p-5 rounded-br-lg border border-amber-500/30">
+            <p className="text-gray-100 text-sm sm:text-base md:text-lg leading-relaxed font-normal bg-black/40 backdrop-blur-xs p-4 sm:p-5 rounded-br-lg border border-amber-400/30">
               Na <strong className="text-amber-400 font-bold">Silva, Raas & Ons Sociedade de Advogados</strong>, compreendemos que a advocacia transcende a mera aplicação de normas e procedimentos técnicos. Para nós, o Direito é, fundamentalmente, sobre pessoas. Cada processo que conduzimos e cada consulta que realizamos representam uma oportunidade de gerar impacto social positivo.
             </p>
 
@@ -50,9 +50,9 @@ export function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* 1. Filosofia */}
-            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
                   Filosofia
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -62,9 +62,9 @@ export function Home() {
             </article>
 
             {/* 2. Dignidade da Pessoa Humana */}
-            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
                   Dignidade da Pessoa Humana
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -74,9 +74,9 @@ export function Home() {
             </article>
 
             {/* 3. Isonomia e Ética */}
-            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
                   Isonomia e Ética
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -86,9 +86,9 @@ export function Home() {
             </article>
 
             {/* 4. Responsabilidade e Confiança */}
-            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
                   Responsabilidade e Confiança
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -98,9 +98,9 @@ export function Home() {
             </article>
 
             {/* 5. Amor pela Justiça */}
-            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-400/50 hover:border-amber-400 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
+                <h4 className="text-base sm:text-lg font-bold uppercase text-amber-400">
                   Amor pela Justiça
                 </h4>
                 <p className="text-stone-900 text-xs sm:text-sm leading-relaxed font-normal">
@@ -110,8 +110,8 @@ export function Home() {
             </article>
 
             {/* 6. Card de Chamada para Ação */}
-            <article className="p-6 rounded-br-lg bg-black border-2 border-amber-500/60 flex flex-col items-center justify-center gap-4 text-center shadow-xl">
-              <div className="w-12 h-12 rounded-br-lg  bg-amber-500/10 border border-amber-500/40 flex items-center justify-center text-amber-500 text-xl">
+            <article className="p-6 rounded-br-lg bg-black border-2 border-amber-400/60 flex flex-col items-center justify-center gap-4 text-center shadow-xl">
+              <div className="w-12 h-12 rounded-br-lg  bg-amber-400/10 border border-amber-400/40 flex items-center justify-center text-amber-400 text-xl">
                 <i className="fa-solid fa-gavel"></i>
               </div>
               <p className="text-amber-400 font-bold text-sm sm:text-base">

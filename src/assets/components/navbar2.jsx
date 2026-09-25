@@ -24,7 +24,7 @@ export function MobileFooterMenu() {
                 aria-label={item.label}
                 className={`relative inline-flex items-center justify-center p-2.5 rounded-xl transition-all duration-300 touch-manipulation ${
                   isActive
-                    ? "text-amber-400 bg-amber-500/10 scale-110"
+                    ? "text-amber-300 bg-amber-400/10 scale-110"
                     : "text-gray-400 hover:text-amber-300 active:scale-95"
                 }`}
               >
