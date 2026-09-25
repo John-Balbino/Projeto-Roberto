@@ -50,7 +50,7 @@ export function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* 1. Filosofia */}
-            <article className="p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
                 <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
                   Filosofia
@@ -62,7 +62,7 @@ export function Home() {
             </article>
 
             {/* 2. Dignidade da Pessoa Humana */}
-            <article className="p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
                 <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
                   Dignidade da Pessoa Humana
@@ -74,7 +74,7 @@ export function Home() {
             </article>
 
             {/* 3. Isonomia e Ética */}
-            <article className="p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
                 <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
                   Isonomia e Ética
@@ -86,7 +86,7 @@ export function Home() {
             </article>
 
             {/* 4. Responsabilidade e Confiança */}
-            <article className="p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
                 <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
                   Responsabilidade e Confiança
@@ -98,7 +98,7 @@ export function Home() {
             </article>
 
             {/* 5. Amor pela Justiça */}
-            <article className="p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-br-lg bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-all flex flex-col justify-between gap-3 shadow-lg">
               <div className="flex flex-col gap-3">
                 <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
                   Amor pela Justiça

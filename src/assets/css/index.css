@@ -81,7 +81,7 @@ body{
     color: rgb(255, 158, 11);
 }
 :root {
-    --cor-principal: rgb(255, 158, 11);
+    --cor-principal: rgb(255, 198, 11);
 }
 .button {
     position: relative;
@@ -89,7 +89,7 @@ body{
     padding: 12px 26px;
     border-radius: 8px;
     background-color: var(--cor-principal);
-    color: #ffffff;
+    color: #000000;
     font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -124,6 +124,7 @@ body{
 .button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 158, 11, 0.4);
+    background-color: rgb(255, 158, 11);
 }
 
 .button:active {

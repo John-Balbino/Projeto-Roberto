@@ -17,7 +17,7 @@ export function Navbar() {
   return (
     <header className="w-full sticky top-0 z-50 shadow-2xl">
       {/* Topbar Informativa em Tom Âmbar */}
-      <div className="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-black px-4 sm:px-8 py-1.5 flex justify-between items-center text-xs font-semibold">
+      <div className="bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500 text-black px-4 sm:px-8 py-1.5 flex justify-between items-center text-xs font-semibold">
         <div className="flex items-center gap-6">
           <a
             href="https://wa.me/5511961324380"

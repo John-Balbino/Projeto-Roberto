@@ -80,7 +80,7 @@ export function Institucional() {
             {/* Botão de Ação */}
             <button
               onClick={() => setTodosAbertos((prev) => !prev)}
-              className="w-full sm:w-auto px-6 py-3 bg-amber-500 hover:bg-amber-400 active:scale-95 text-black font-bold text-xs uppercase rounded-xl transition-all shadow-md shadow-amber-500/20 cursor-pointer flex items-center justify-center gap-2 touch-manipulation"
+              className="w-full sm:w-auto px-6 py-3 bg-amber-400 hover:bg-amber-500 active:scale-95 text-black font-bold text-xs uppercase rounded-xl transition-all shadow-md shadow-amber-500/20 cursor-pointer flex items-center justify-center gap-2 touch-manipulation"
             >
               <span>{todosAbertos ? "Ocultar Detalhes" : "Visualizar Todos"}</span>
               <span>{todosAbertos ? "▲" : "▼"}</span>
@@ -145,7 +145,7 @@ export function Institucional() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card Trajetórias */}
-            <article className="p-6 rounded-2xl bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-colors flex flex-col gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-2xl bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-colors flex flex-col gap-3 shadow-lg">
               <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
                 Trajetórias que somam
               </h4>
@@ -155,7 +155,7 @@ export function Institucional() {
             </article>
 
             {/* Card Prática Jurídica */}
-            <article className="p-6 rounded-2xl bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-colors flex flex-col gap-3 shadow-lg">
+            <article className="text-center p-6 rounded-2xl bg-stone-50 border border-amber-500/50 hover:border-amber-600 transition-colors flex flex-col gap-3 shadow-lg">
               <h4 className="text-base sm:text-lg font-bold uppercase text-amber-700">
                 A Consolidação da Prática Jurídica
               </h4>
@@ -165,7 +165,7 @@ export function Institucional() {
             </article>
 
             {/* Card Filosofia */}
-            <article className="md:col-span-2 p-6 sm:p-8 rounded-2xl bg-stone-50 border-2 border-amber-500/60 flex flex-col gap-3 shadow-xl">
+            <article className="text-center md:col-span-2 p-6 sm:p-8 rounded-2xl bg-stone-50 border-2 border-amber-500/60 flex flex-col gap-3 shadow-xl">
               <h4 className="text-base sm:text-lg md:text-xl font-bold uppercase text-amber-700">
                 Nossa Filosofia de Trabalho
               </h4>
