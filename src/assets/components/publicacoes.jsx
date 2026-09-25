@@ -83,7 +83,7 @@ export function Publicacoes() {
               className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
                 categoriaAtiva === cat
                   ? "bg-amber-500 text-black shadow-md shadow-amber-500/20"
-                  : "bg-gray-800/60 text-gray-300 hover:bg-gray-700 border border-gray-700"
+                  : "bg-gray-800/60 text-gray-300 hover:bg-gray-700 border border-amber-700"
               }`}
             >
               {cat}
@@ -98,7 +98,7 @@ export function Publicacoes() {
           {/* Notícia Destaque Principal (Hero - 7 Colunas no Desktop) */}
           <article
             onClick={() => setNoticiaAberta(destaque)}
-            className="lg:col-span-7 group cursor-pointer relative rounded-2xl overflow-hidden border border-gray-700/40 bg-gray-900/40 flex flex-col justify-end min-h-[420px] transition-all duration-300 hover:border-amber-500/50 shadow-xl"
+            className="lg:col-span-7 group cursor-pointer relative rounded-2xl overflow-hidden border border-amber-700/40 bg-gray-900/40 flex flex-col justify-end min-h-[420px] transition-all duration-300 hover:border-amber-500/50 shadow-xl"
           >
             <img
               src={destaque.imagem}

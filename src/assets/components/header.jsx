@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logoimg from "../img/logo-site.jpg";
+import { ThemeToggle } from './tema';
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -47,6 +48,7 @@ export function Navbar() {
             <i className="fa-brands fa-instagram text-base"></i>
             <span className="hidden md:inline">@silvaraaseons.adv</span>
           </a>
+            <ThemeToggle />
         </div>
       </div>
 

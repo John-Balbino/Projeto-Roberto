@@ -136,3 +136,68 @@ body{
   filter:saturate(0);
   clip-path: polygon(49.8% 0%, 100% 0%, 100% 100%, 25.6% 100%);
 }
+
+
+/*estilos para a troca de tema do site */
+/* Variáveis globais no CSS da aplicação (ex: index.css ou App.css) */
+/* index.css ou App.css */
+
+/* Tema Escuro (Padrão do site) */
+:root {
+  --bg-main: #0d0d0d;
+  --bg-header: #141414;
+  --bg-card: #1c1c1c;
+  --text-main: #ffffff;
+  --text-sub: #a0a0a0;
+  --accent: #d4a359;      /* Dourado */
+  --border: #2a2a2a;
+}
+
+/* Tema Claro (Ativado quando o botão é clicado) */
+body.light-theme {
+  --bg-main: #f8f9fa;
+  --bg-header: #ffffff;
+  --bg-card: #ffffff;
+  --text-main: #1a1a1a;
+  --text-sub: #555555;
+  --accent: #b8860b;      /* Dourado mais escuro para contraste */
+  --border: #e0e0e0;
+}
+
+/* Aplicação na página inteira */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+}
+/* Header / Menu Superior */
+.header, .navbar {
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-link {
+  color: var(--text-main);
+}
+
+.nav-link.active {
+  color: var(--accent);
+}
+/* Seção Áreas de Atuação */
+.areas-atuacao-section {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+.subtitulo {
+  color: var(--text-sub);
+}
+
+/* Cards das Especialidades */
+.card-especialidade {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
