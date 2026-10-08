@@ -19,7 +19,7 @@ export function Home() {
           <div className="relative z-10 max-w-2xl flex flex-col gap-5 text-left">
             <span className="text-amber-400 font-bold uppercase tracking-widest text-xs sm:text-sm flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-br-lg  bg-amber-400 animate-pulse"></span>
-              Silva, Raas & Ons • Sociedade de Advogados
+              SILVA, RAAS & ONS • SOCIEDADE DE ADVOGADOS
             </span>
 
             <h2 className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
@@ -27,7 +27,7 @@ export function Home() {
             </h2>
 
             <p className="text-gray-100 text-sm sm:text-base md:text-lg leading-relaxed font-normal bg-black/40 backdrop-blur-xs p-4 sm:p-5 rounded-br-lg border border-amber-400/30">
-              Na <strong className="text-amber-400 font-bold">Silva, Raas & Ons Sociedade de Advogados</strong>, compreendemos que a advocacia transcende a mera aplicação de normas e procedimentos técnicos. Para nós, o Direito é, fundamentalmente, sobre pessoas. Cada processo que conduzimos e cada consulta que realizamos representam uma oportunidade de gerar impacto social positivo.
+              Na <strong className="text-amber-400 font-bold">SILVA, RAAS & ONS • SOCIEDADE DE ADVOGADOS</strong>, compreendemos que a advocacia transcende a mera aplicação de normas e procedimentos técnicos. Para nós, o Direito é, fundamentalmente, sobre pessoas. Cada processo que conduzimos e cada consulta que realizamos representam uma oportunidade de gerar impacto social positivo.
             </p>
 
             {/* Container do Botão com a classe button aplicada no Link */}
@@ -115,7 +115,7 @@ export function Home() {
                 <i className="fa-solid fa-gavel"></i>
               </div>
               <p className="text-amber-400 font-bold text-sm sm:text-base">
-                Silva, Raas & Ons Sociedade de Advogados
+                SILVA, RAAS & ONS • SOCIEDADE DE ADVOGADOS
               </p>
               <p className="text-gray-300 text-xs">
                 Excelência e dedicação.
