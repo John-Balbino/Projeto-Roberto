@@ -1,4 +1,5 @@
 import { useState } from "react";
+import imgPerfil from "../img/logo-site.jpg"; // Imagem de perfil dos sócios (substitua pelo caminho correto)
 
 const pilares = [
   {
@@ -38,10 +39,10 @@ export function Institucional() {
   return (
     <section className="w-full flex justify-center items-center p-4 sm:p-6 md:p-10 min-h-screen pb-20 md:pb-10">
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-10 md:gap-14">
-        
-        {/* Bloco Inicial: História + Espaço para Foto dos Sócios */}
+
+        {/* Bloco Inicial: História + Foto dos Sócios / Identidade */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-amber-500/30 pb-10">
-          
+
           {/* Texto de Apresentação com Fundo Off-White Suave */}
           <div className="lg:col-span-7 flex flex-col gap-4 text-center lg:text-left">
             <h2 className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent font-bold text-2xl sm:text-3xl md:text-4xl leading-tight">
@@ -52,20 +53,13 @@ export function Institucional() {
             </p>
           </div>
 
-          {/* MANTIDO ESCURO: Espaço Reservado para Foto de Perfil / Sócios */}
-          <div className="lg:col-span-5 w-full h-72 sm:h-80 md:h-96 bg-black rounded-2xl border-2 border-dashed border-amber-500/50 flex flex-col items-center justify-center p-6 text-center shadow-2xl relative overflow-hidden group">
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-60" />
-            <div className="relative z-10 flex flex-col items-center gap-3">
-              <div className="w-16 h-16 rounded-full bg-amber-500/10 border border-amber-500/40 flex items-center justify-center text-amber-500 text-2xl">
-                <i className="fa-solid fa-user-tie"></i>
-              </div>
-              <span className="text-amber-400 font-bold uppercase tracking-wider text-xs sm:text-sm">
-                Espaço Reservado
-              </span>
-              <p className="text-gray-300 font-medium text-xs sm:text-sm max-w-xs">
-                Foto de Perfil dos Sócios / Apresentação da Equipe
-              </p>
-            </div>
+          {/* MANTIDO ESCURO: Imagem de Perfil / Sócios */}
+          <div className="lg:col-span-5 w-full h-72 sm:h-80 md:h-96 bg-black rounded-2xl border-2 border-amber-500/50 flex items-center justify-center p-4 shadow-2xl relative overflow-hidden group">
+            <img
+              src={imgPerfil}
+              alt="Silva RAAS & ONS Sociedade de Advogados - Sócios e Identidade Institucional"
+              className="w-full h-full object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+            />
           </div>
         </div>
 
